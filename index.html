@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Yantramanav&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    
+    <div id="principal">
+        <header>
+            <div>  <img src="./assets/Back.png" width="50%" height="50%"> </div>
+            <div id="cabecalho">
+                <h1>Metabolismo e IMC</h1>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+            <div class="line"></div>
+        </nav>
+
+        <section>
+            <div class="main-section">
+                <div class="aviso">
+                    <h3 class="destaque">Precisamos coletar alguns dados</h3>
+                </div>
+                <div class="inputs">
+                    <div class="md-6-lft">
+                        <label>Informe sua idade: </label>
+                        <input type="number" name="idade" id="idade">
+
+                        <div class="clear"></div>
+                        <br>
+                        
+                        <label>Informe sua estatura (em cm): </label>
+                        <input type="number" name="estatura" id="estatura">
+                        <!-- Adaptar para metros pra calculo do IMC -->
+                        
+                        <div class="clear"></div>
+                        <br>
+                        
+                        <label>Informe seu peso (em kg): </label>
+                        <input type="number" name="peso" id="peso">
+                        
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="md-6-rgt">
+                        <div class="inputSexo">
+                            <div>
+                                <h3 class="destaque">Informe seu sexo:</h3>
+                            </div>
+                            
+                            <div>
+                                <div>
+                                    <input type="radio" name="sexo" id="homem" value=0> <label>Homem</label>
+                                    <div class="clear"></div>
+                                    <input type="radio" name="sexo" id="mulher" value=1> <label>Mulher</label>
+                                </div>                       
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+
+                <div id="btn-calc">
+                    <button id="calcular"> Calcular </button>
+                </div> 
+            </div>       
+        </section>
+        
+        <aside>
+            <div class="main-aside">
+                <div class="aside-titulo">
+                    <h3>Resultados</h3>
+                </div>
+
+                <div>
+                    <div class="aside-resultados">
+                        <h4>IMC</h4>
+                    </div>
+                    <p id="resultIMC" class="destaque">Resultados</p>
+                    <!-- <input  type="text" readonly="true" value="0"> -->
+                    <div class="clear"></div>
+
+                    <div class="aside-resultados">
+                        <h4>TMB</h4>
+                    </div>
+                    <p id="resultTMB" class="destaque">Resultados</p>
+                    <!-- <input type="text" readonly="true" value="0"> -->
+                </div> 
+                
+                
+                <div class="formulas">
+                    <label> Quer saber como tudo foi calculado?</label>
+                    <form>
+                        <input type="radio" name="Showhide" id="esconder" onclick="ShowHideX(0)"checked> <label>Não</label>
+                        <div class="clear"></div>
+                        <input type="radio" name="Showhide" id="exibir" onclick="ShowHideX(1)"> <label>Sim</label>
+                    </form>
+                </div> 
+            </div>
+
+        </aside>
+
+    
+        <div class="main-obs">
+            <div id="obs">
+                <div class="formulas"><img src="./assets/tmb.png" alt=""></div>
+                <div class="formulas"><img src="./assets/imc.png" alt=""></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="line"></div>            
+            <div id="rodape">
+                <h4>© 2020 Todos os direitos reservados - Marcelo Carvalho e Cassiano Medrado</h4>
+            </div>
+        </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="ShowHide.js"></script>
+</body>
+
+</html>
